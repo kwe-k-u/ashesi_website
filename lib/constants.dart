@@ -5,7 +5,7 @@
 import 'package:ashesi_website/utils/title_bar_item.dart';
 import 'package:flutter/cupertino.dart';
 
-const double MEDIUM_SCREEN = 600;
+const double MEDIUM_SCREEN = 840;
 const double LARGE_SCREEN = 1080;
 
 //colours
