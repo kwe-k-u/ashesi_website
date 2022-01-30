@@ -1,15 +1,16 @@
 import 'package:ashesi_website/utils/title_bar_item.dart';
 import 'package:ashesi_website/widgets/ashesi_logo.dart';
-import 'package:ashesi_website/widgets/title_bar.dart/title_bar_large.dart';
-import 'package:ashesi_website/widgets/title_bar.dart/widget/title_icon_button.dart';
-import 'package:ashesi_website/widgets/title_bar.dart/widget/title_button.dart';
+import 'package:ashesi_website/widgets/title_bar/widget/title_icon_button.dart';
 import "package:flutter/material.dart";
 
 
 class TitleBarSmall extends StatefulWidget {
   final List<TitleBarItem> items;
+  final void Function()? onMenuTap;
+
   const TitleBarSmall({
     Key? key,
+    this.onMenuTap,
     required this.items
   }) : super(key: key);
 
@@ -24,11 +25,11 @@ class _TitleBarSmallState extends State<TitleBarSmall> {
       padding: EdgeInsets.symmetric(horizontal: 8),
       child: Row(
         mainAxisAlignment: MainAxisAlignment.center,
-        children: const [
+        children:  [
           AshesiLogo(coloured: true,),
 
           Spacer(),
-          TitleIconButton(iconColor: Colors.grey, icon: Icons.menu, iconSize: 35,),
+          TitleIconButton(iconColor: Colors.grey, icon: Icons.menu, iconSize: 35, onTap:widget.onMenuTap,),
           TitleIconButton(iconColor: Colors.grey, icon: Icons.search, iconSize: 35,),
         ],
       ),

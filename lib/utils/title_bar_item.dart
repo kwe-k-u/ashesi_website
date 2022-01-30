@@ -4,7 +4,7 @@ import 'package:flutter/cupertino.dart';
 
 class TitleBarItem{
   final String title;
-  final List<String>? innerItems;
+  final List<TitleBarItem>? innerItems;
 
   TitleBarItem({
     required this.title,

@@ -6,10 +6,12 @@ class TitleIconButton extends StatefulWidget {
   final IconData icon;
   final Color? iconColor;
   final double? iconSize;
+  final void Function()? onTap;
   const TitleIconButton({
     Key? key,
     required this.icon,
     this.iconSize,
+    this.onTap,
     this.iconColor,
   }) : super(key: key);
 
@@ -35,7 +37,7 @@ class _TitleIconButtonState extends State<TitleIconButton> {
             _isHovered = hover;
           });
         },
-        onTap: () {},
+        onTap: widget.onTap ?? (){},
       ),
     );
   }
