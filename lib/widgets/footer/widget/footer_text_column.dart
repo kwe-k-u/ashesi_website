@@ -16,7 +16,6 @@ class FooterTextColumn extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    Size size = MediaQuery.of(context).size;
 
     return Container(
       margin: margin ?? const EdgeInsets.all(8) ,

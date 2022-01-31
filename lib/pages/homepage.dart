@@ -1,5 +1,7 @@
 import 'package:ashesi_website/constants.dart';
 import 'package:ashesi_website/widgets/footer/footer.dart';
+import 'package:ashesi_website/widgets/news_article/news_article_section.dart';
+import 'package:ashesi_website/widgets/population_stats/population_stats.dart';
 import 'package:ashesi_website/widgets/title_bar/small_nav_options.dart';
 import 'package:ashesi_website/widgets/title_bar/title_bar.dart';
 import 'package:flutter/material.dart';
@@ -21,7 +23,6 @@ class _HomepageState extends State<Homepage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade400,
         body: PageView(
           physics: const NeverScrollableScrollPhysics(),
           controller: pageController,
@@ -30,6 +31,7 @@ class _HomepageState extends State<Homepage> {
             SmallNavOptions(items: items, onClose: (){
               pageController.jumpToPage(1);
             }),
+
 
             SingleChildScrollView(
               child: Column(
@@ -40,6 +42,13 @@ class _HomepageState extends State<Homepage> {
                       pageController.jumpToPage(0);
                     },
                   ),
+
+                  const PopulationStats(),
+
+                  const NewsArticleSection(),
+
+                  Image.asset("images/impact_rankings.jpg"),
+
 
                   const Footer()
                 ],

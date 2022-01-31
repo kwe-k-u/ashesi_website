@@ -2,6 +2,7 @@
 // ignore_for_file: constant_identifier_names
 
 //screen sizes
+import 'package:ashesi_website/utils/news_article_model.dart';
 import 'package:ashesi_website/utils/title_bar_item.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -325,3 +326,31 @@ const Color ashesiWhite = Color(0xFFfbfbfb);
     title: "Donate",
   ),
 ];
+ 
+ 
+ 
+ 
+ //news article items
+NewsArticleModel experienceAshesiArticle = NewsArticleModel(
+    title: "Experience Ashesi",
+    imageUrl: "images/experience_ashesi.jpg",
+    description: "For high schoolers and prospective parents, and everyone interested in our model or partnerships, here's how you can experience Ashesi",
+    actionText: "Read more"
+);
+
+
+NewsArticleModel globalReachArticle = NewsArticleModel(
+    title: "Global Reach",
+    imageUrl: "images/global_reach.jpg",
+    description: "Ashesi is  recognised around the world for its impact, and considered a thought leader in education ethical, entrepreneurial leaders in Africa.",
+    actionText: "Read more"
+);
+
+
+
+NewsArticleModel supportOurWorkArticle = NewsArticleModel(
+    title: "Support Our Work",
+    imageUrl: "images/support_our_work.jpg",
+    description: "Since Ashesi's launch, generous donors have helped make our progress possible. Here's how to join our cause and help prepare young leaders in Africa.",
+    actionText: "Ashesi Foundation Website ->"
+);
