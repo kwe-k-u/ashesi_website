@@ -1,5 +1,6 @@
 import 'package:ashesi_website/constants.dart';
 import 'package:ashesi_website/widgets/footer/footer.dart';
+import 'package:ashesi_website/widgets/mission_statement/misson_statement.dart';
 import 'package:ashesi_website/widgets/news_article/news_article_section.dart';
 import 'package:ashesi_website/widgets/population_stats/population_stats.dart';
 import 'package:ashesi_website/widgets/title_bar/small_nav_options.dart';
@@ -33,15 +34,21 @@ class _HomepageState extends State<Homepage> {
             }),
 
 
+
             SingleChildScrollView(
               child: Column(
                 children:  [
-                  TitleBar(
-                    items: items,
-                    onMenuButtonTap: (){
-                      pageController.jumpToPage(0);
-                    },
+                  Container(
+                    color: ashesiGrey,
+                    child: TitleBar(
+                      items: items,
+                      onMenuButtonTap: (){
+                        pageController.jumpToPage(0);
+                      },
+                    ),
                   ),
+
+                  const MissionStatement(),
 
                   const PopulationStats(),
 

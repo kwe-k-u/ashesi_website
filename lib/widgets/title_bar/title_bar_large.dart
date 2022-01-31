@@ -39,7 +39,9 @@ class _TitleBarLargeState extends State<TitleBarLarge> {
 
 
             ...widget.items.map((e) => TitleButton(
-                child: Text(e.title),
+                child: Text(e.title,
+                  style: Theme.of(context).textTheme.bodyText2!.copyWith(color: Colors.white),
+    ),
               onHover: (isHovered){
                   if (isHovered) {
                     if (e.innerItems != null) {
@@ -96,7 +98,12 @@ class _SubItemButton extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container(margin: EdgeInsets.symmetric(vertical: 4, horizontal: 8),child: Text(title));
+    return Container(
+        margin: EdgeInsets.symmetric(vertical: 4, horizontal: 8),
+        child: Text(title,
+          style: Theme.of(context).textTheme.bodyText2!.copyWith(color: Colors.white),
+        )
+    );
 
 
   }

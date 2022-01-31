@@ -20,7 +20,7 @@ class MyApp extends StatelessWidget {
 
         textTheme:  TextTheme(
           bodyText2: GoogleFonts.lato(
-            color: Colors.white,
+            // color: Colors.white,
             fontWeight: FontWeight.w500
           )
         )

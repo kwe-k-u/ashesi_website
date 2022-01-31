@@ -24,7 +24,7 @@ class _ViewPortState extends State<ViewPort> {
 
           //medium screens
         } else if (constraints.maxWidth > MEDIUM_SCREEN) {
-          return widget.medium ?? widget.large;
+          return widget.medium ??  widget.small ?? widget.large;
 
 
           //small screens

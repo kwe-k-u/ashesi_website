@@ -19,7 +19,7 @@ class TitleBar extends StatelessWidget {
       large: TitleBarLarge(
         items: items,
       ),
-      medium: TitleBarSmall(items: items,onMenuTap: onMenuButtonTap),
+      // medium: TitleBarSmall(items: items,onMenuTap: onMenuButtonTap),
       small: TitleBarSmall(items: items, onMenuTap: onMenuButtonTap),
     );
   }
