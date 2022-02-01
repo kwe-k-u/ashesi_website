@@ -17,7 +17,12 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
+        textButtonTheme: TextButtonThemeData(
+          style: ButtonStyle(
 
+            foregroundColor: MaterialStateProperty.all<Color>(Colors.white)
+          )
+        ),
         textTheme:  TextTheme(
           bodyText2: GoogleFonts.lato(
             // color: Colors.white,

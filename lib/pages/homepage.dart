@@ -3,6 +3,7 @@ import 'package:ashesi_website/widgets/footer/footer.dart';
 import 'package:ashesi_website/widgets/mission_statement/misson_statement.dart';
 import 'package:ashesi_website/widgets/news_article/news_article_section.dart';
 import 'package:ashesi_website/widgets/population_stats/population_stats.dart';
+import 'package:ashesi_website/widgets/slide_show/slide_show.dart';
 import 'package:ashesi_website/widgets/title_bar/small_nav_options.dart';
 import 'package:ashesi_website/widgets/title_bar/title_bar.dart';
 import 'package:flutter/material.dart';
@@ -47,6 +48,8 @@ class _HomepageState extends State<Homepage> {
                       },
                     ),
                   ),
+
+                  const Slideshow(),
 
                   const MissionStatement(),
 

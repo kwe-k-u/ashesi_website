@@ -18,7 +18,7 @@ class FooterSmall extends StatelessWidget {
       child: Container(
         color: ashesiGrey,
         width: size.width,
-        // height: size.height,
+        height: size.height,
         child: Row(
           children: [
             SizedBox(

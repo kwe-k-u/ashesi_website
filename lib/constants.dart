@@ -3,6 +3,7 @@
 
 //screen sizes
 import 'package:ashesi_website/utils/news_article_model.dart';
+import 'package:ashesi_website/utils/slide.dart';
 import 'package:ashesi_website/utils/title_bar_item.dart';
 import 'package:flutter/cupertino.dart';
 
@@ -354,3 +355,18 @@ NewsArticleModel supportOurWorkArticle = NewsArticleModel(
     description: "Since Ashesi's launch, generous donors have helped make our progress possible. Here's how to join our cause and help prepare young leaders in Africa.",
     actionText: "Ashesi Foundation Website ->"
 );
+
+
+
+
+
+
+
+// Image objects for the slide show
+List<Slide> slides = [
+  Slide(image:"images/slide_1.jpg", headline: "Ashesi welcomes undergraduate Class of 2025"),
+  Slide(image:"images/slide_2.jpg", headline: "Master's programme in Mechatronic Engineering welcomes pioneer class"),
+  Slide(image:"images/slide_3.jpg", headline: "Grant award to enable Ashesi faculty member build learning platform for women in entrepreneurship"),
+  Slide(image:"images/slide_4.jpg", headline: "Student residence hall named in honour of Ghanaian philanthropist Kofi A. Tawiah"),
+  Slide(image:"images/slide_5.jpg", headline: "Experience the Ashesi Advantage: Learn about applying to Ashesi"),
+];
