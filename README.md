@@ -1,16 +1,6 @@
-# ashesi_website
+# Project Description
 
-A new Flutter project.
+This is a flutter project where I replicated the homepage of Ashesi University, Ghana (https://www.ashesi.edu.gh). This project was in response to a comment someone pass that "Flutter is only for mobile development" and partly because a friend mentioned that I hadn't made any public projects in a while. Although, not all the features have been implemented and this clone is not pixel perfect, I am comfortable to leave it as it is for the time being so I can focus on the projects I have been developing in private repository. Feel free to clone and complete it if you want to challenge yourself.
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Here's a link to a recording that shows the most recent version of the project pic.twitter.com/ZRJnwK1f3A
+ 
